@@ -12,17 +12,27 @@ class ViewController: UIViewController {
     
     
     
+    @IBOutlet weak var TextField: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    var digit : String = ""
     @IBAction func btnClicked(_ sender: UIButton)
     {
-        var digit = Int((sender.titleLabel?.text)!)
         
+        digit += String((sender.titleLabel?.text)!)
+        
+            print(digit)
+        TextField.text = "Coucou"
+       
         
     }
+    
     
 }
 
