@@ -11,13 +11,18 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    @IBOutlet weak var btm1: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func btnClicked(_ sender: UIButton)
+    {
+        var digit = Int((sender.titleLabel?.text)!)
+        
+        
+    }
+    
 }
 
